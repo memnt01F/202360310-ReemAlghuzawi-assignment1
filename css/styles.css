@@ -1,1 +1,43 @@
+* ---------- Base / Theme ---------- */
+:root{
+  --bg: #0b1020;
+  --card: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.14);
+  --text: #f2f5ff;
+  --muted: rgba(242,245,255,0.75);
+  --accent: #5b7cfa;
+  --shadow: 0 16px 40px rgba(0,0,0,0.35);
+}
+
+body.dark{
+  --bg: #0b1020;
+  --card: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.14);
+  --text: #f2f5ff;
+  --muted: rgba(242,245,255,0.75);
+  --accent: #5b7cfa;
+  --shadow: 0 16px 40px rgba(0,0,0,0.35);
+}
+
+body:not(.dark){
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --border: #e6e8f2;
+  --text: #101325;
+  --muted: #4b516e;
+  --accent: #2f66ff;
+  --shadow: 0 16px 40px rgba(16,19,37,0.12);
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+html{ scroll-behavior: smooth; }
+
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: radial-gradient(1200px 600px at 20% 0%, rgba(91,124,250,0.25), transparent 60%),
+              radial-gradient(900px 500px at 90% 10%, rgba(91,124,250,0.18), transparent 55%),
+              var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
 
