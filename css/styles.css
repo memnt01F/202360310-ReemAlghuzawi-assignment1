@@ -40,4 +40,60 @@ body{
   color: var(--text);
   line-height: 1.6;
 }
+/* ---------- Layout ---------- */
+/* Center container and limit max width */
+.container{
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
 
+/* Sticky header stays at top while scrolling */
+.site-header{
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: color-mix(in oklab, var(--bg) 85%, transparent);
+  border-bottom: 1px solid var(--border);
+  z-index: 10;
+}
+
+/* Navigation layout using Flexbox */
+.nav{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  gap: 14px;
+}
+
+/* Main name styling */
+.brand{
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+/* Subtitle styling */
+.subtitle{
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+/* Navigation link container (Flex layout) */
+.nav-actions{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Navigation links styling */
+.nav-link{
+  text-decoration:none;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover{ color: var(--text); }
