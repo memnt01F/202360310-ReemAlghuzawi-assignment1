@@ -72,7 +72,7 @@ JavaScript prevents default form submission:
 event.preventDefault();
 
 
-Instead of sending data to a server (not required for this assignment), it:
+Instead of sending data to a server it:
 
 - Displays a confirmation message
 - Resets the form fields
