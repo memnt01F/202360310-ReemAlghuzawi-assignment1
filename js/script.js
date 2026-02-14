@@ -25,5 +25,25 @@ themeToggleBtn.addEventListener("click", () => {
   }
 });
 
+// ================= CONTACT FORM =================
+
+// Get the contact form element
+const contactForm = document.getElementById("contactForm");
+
+// Get the paragraph element where feedback message will appear
+const formMessage = document.getElementById("formMessage");
+
+// Listen for form submission
+contactForm.addEventListener("submit", (event) => {
+
+  // Prevent default form submission (no backend required)
+  event.preventDefault();
+
+  // Display confirmation message
+  formMessage.textContent = "Message submitted successfully.";
+
+  // Reset the form fields
+  contactForm.reset();
+});
 
 
