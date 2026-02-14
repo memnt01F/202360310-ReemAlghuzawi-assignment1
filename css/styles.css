@@ -271,3 +271,11 @@ input, textarea{
 .theme-switch input:checked + .slider::before {
   transform: translateX(24px);
 }
+
+
+/* On small screens: stack project cards and adjust spacing */
+@media (max-width: 850px){
+  .projects-grid{ grid-template-columns: 1fr; }
+  section{ padding: 18px; }
+  .nav{ align-items: flex-start; }
+}
