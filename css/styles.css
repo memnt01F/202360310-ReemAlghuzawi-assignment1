@@ -41,7 +41,7 @@ body{
   line-height: 1.6;
 }
 /* ---------- Layout ---------- */
-/* Center container and limit max width */
+
 .container{
   width: min(1000px, 92%);
   margin: 0 auto;
@@ -66,14 +66,14 @@ body{
   gap: 14px;
 }
 
-/* Main name styling */
+
 .brand{
   font-size: 22px;
   font-weight: 800;
   letter-spacing: 0.2px;
 }
 
-/* Subtitle styling */
+
 .subtitle{
   color: var(--muted);
   font-size: 13px;
@@ -88,7 +88,7 @@ body{
   flex-wrap: wrap;
 }
 
-/* Navigation links styling */
+
 .nav-link{
   text-decoration:none;
   color: var(--muted);
@@ -97,3 +97,26 @@ body{
 
 /* Hover effect for navigation links */
 .nav-link:hover{ color: var(--text); }
+
+/* ---------- Sections ---------- */
+
+main{ padding: 26px 0 60px; }
+
+
+section{
+  margin-top: 34px;
+  padding: 22px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+
+h2{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+p{ color: var(--muted); }
